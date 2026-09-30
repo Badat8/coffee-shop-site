@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bean Boutique shopping cart and checkout summary." />
+    <title>Bean Boutique | Cart</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="home.html" aria-label="Bean Boutique home">
+          <span class="brand-mark">BB</span>
+          <span>Bean Boutique</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navbar" aria-label="Main navigation">
+          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="coffee.html">Coffee</a>
+          <a class="nav-link" href="equipment.html">Equipment</a>
+          <a class="nav-link" href="events.html">Events</a>
+          <a class="nav-link active" href="cart.html">Cart</a>
+          <a class="nav-link" href="offers.html">Offers</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="container page-header">
+        <p class="eyebrow">Your selections</p>
+        <h1>Shopping cart</h1>
+      </section>
+
+      <section class="container cart-layout">
+        <div class="cart-panel card">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th scope="col">Product</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Subtotal</th>
+                <th scope="col">Remove</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items-body"></tbody>
+          </table>
+        </div>
+
+        <aside class="summary-panel card" aria-label="Order summary">
+          <h2>Order summary</h2>
+          <dl class="summary-list">
+            <div>
+              <dt>Subtotal</dt>
+              <dd id="subtotal">MK0</dd>
+            </div>
+            <div>
+              <dt>Estimated Tax</dt>
+              <dd id="tax">MK0</dd>
+            </div>
+            <div>
+              <dt>Shipping</dt>
+              <dd id="shipping">MK0</dd>
+            </div>
+            <div class="summary-total">
+              <dt>Total</dt>
+              <dd id="total">MK0</dd>
+            </div>
+          </dl>
+          <p id="shipping-status" class="shipping-status">Add MK30,000 for free shipping.</p>
+          <button class="btn btn-primary checkout-btn" type="button">Proceed to Checkout</button>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Bean Boutique</h3>
+          <p>Slow coffee, thoughtful sourcing, and warm hospitality.</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Mon–Fri: 7:00 AM – 6:00 PM</p>
+          <p>Sat: 8:00 AM – 4:00 PM</p>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

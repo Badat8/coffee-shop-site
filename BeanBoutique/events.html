@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bean Boutique events, tastings, and workshop registrations." />
+    <title>Bean Boutique | Events</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="home.html" aria-label="Bean Boutique home">
+          <span class="brand-mark">BB</span>
+          <span>Bean Boutique</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navbar" aria-label="Main navigation">
+          <a class="nav-link" href="home.html">Home</a>
+          <a class="nav-link" href="coffee.html">Coffee</a>
+          <a class="nav-link" href="equipment.html">Equipment</a>
+          <a class="nav-link active" href="events.html">Events</a>
+          <a class="nav-link" href="cart.html">Cart</a>
+          <a class="nav-link" href="offers.html">Offers</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="container page-header">
+        <p class="eyebrow">Community gatherings</p>
+        <h1>Upcoming workshops and tastings</h1>
+      </section>
+
+      <section class="container event-grid" aria-label="Upcoming events">
+        <article class="event-card card">
+          <p class="event-date">15 Oct 2026</p>
+          <h3>Cupping Session</h3>
+          <p>Explore single-origin coffees with guided tasting notes and texture analysis.</p>
+          <p class="event-meta">Seats available: 12</p>
+        </article>
+
+        <article class="event-card card">
+          <p class="event-date">05 Nov 2026</p>
+          <h3>Latte Art Lab</h3>
+          <p>Build confidence with milk texture, pouring patterns, and clean, intentional shapes.</p>
+          <p class="event-meta">Seats available: 8</p>
+        </article>
+
+        <article class="event-card card">
+          <p class="event-date">18 Nov 2026</p>
+          <h3>Meet the Roaster</h3>
+          <p>Hear the story behind our latest harvests and enjoy a curated tasting flight.</p>
+          <p class="event-meta">Seats available: 15</p>
+        </article>
+      </section>
+
+      <section class="container form-section">
+        <div class="section-heading">
+          <p class="eyebrow">Register</p>
+          <h2>Reserve your seat</h2>
+        </div>
+
+        <form id="registration-form" class="registration-form" novalidate>
+          <div class="form-row">
+            <div class="field-group">
+              <label for="firstName">First Name</label>
+              <input id="firstName" name="firstName" type="text" required />
+              <small class="field-feedback" data-feedback-for="firstName"></small>
+            </div>
+
+            <div class="field-group">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" name="lastName" type="text" required />
+              <small class="field-feedback" data-feedback-for="lastName"></small>
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required />
+            <small class="field-feedback" data-feedback-for="email"></small>
+          </div>
+
+          <div class="field-group">
+            <label for="eventSelect">Select Workshop</label>
+            <select id="eventSelect" name="eventSelect" required>
+              <option value="">Choose an event</option>
+              <option value="Cupping Session">Cupping Session</option>
+              <option value="Latte Art Lab">Latte Art Lab</option>
+              <option value="Meet the Roaster">Meet the Roaster</option>
+            </select>
+            <small class="field-feedback" data-feedback-for="eventSelect"></small>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Submit Registration</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Bean Boutique</h3>
+          <p>Slow coffee, thoughtful sourcing, and warm hospitality.</p>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <p>Mon–Fri: 7:00 AM – 6:00 PM</p>
+          <p>Sat: 8:00 AM – 4:00 PM</p>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
